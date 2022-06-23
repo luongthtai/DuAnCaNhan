@@ -1,0 +1,145 @@
+:root {
+  --theme:#fff;
+}
+
+main .content > div, main .users__content {
+  border: 1px solid #e4e6e5;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+main .users {
+  display: grid;
+  grid-template: auto/1fr;
+  gap: 20px;
+}
+
+main .content__meta > div:hover div, main .content__categories p:hover, main .content__archives p:hover, main .content__recent-ports > div:hover div {
+  color: #ff6a00;
+  transform: translateX(2%);
+  transition: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Sarabun", sans-serif;
+}
+body img {
+  width: 100%;
+  border-radius: 5px;
+}
+body button, body a {
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  margin: 3rem 2%;
+  padding: 20px;
+  gap: 20px;
+}
+main .users {
+  width: 65%;
+}
+main .users__content p {
+  color: #666;
+  font-size: 0.8rem;
+}
+main .users__content h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+main .users__content .name {
+  margin: 1rem 0;
+}
+main .users__content .name i {
+  color: #ff6a00;
+}
+main .users__content .name span {
+  color: #666;
+}
+main .users__content a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 1.2rem;
+  background-color: #ff6a00;
+  border-radius: 5px;
+  border: none;
+}
+main .users__content a:hover {
+  background-color: #d25c08;
+  transition: 0.5s;
+}
+main .content {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .content--search form {
+  width: 100%;
+  display: flex;
+}
+main .content--search form input {
+  width: 70%;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #e4e6e5;
+  border-right: none;
+}
+main .content--search form button {
+  width: 30%;
+  font-size: 1rem;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  color: #fff;
+  background-color: #ff6a00;
+}
+main .content__recent-ports > div {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e4e6e5;
+}
+main .content__recent-comment a {
+  padding: 1rem 0;
+  color: #ff6a00;
+  text-decoration: none;
+}
+main .content__recent-comment a:hover {
+  text-decoration: underline;
+}
+main .content__archives i {
+  display: none;
+}
+main .content__archives p {
+  color: #666;
+}
+main .content__archives p:hover {
+  color: #ff6a00;
+}
+main .content__archives p:hover i {
+  display: inline-block;
+}
+main .content__categories p {
+  color: #666;
+}
+main .content__meta > div {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e4e6e5;
+}
+main .content__meta > div i {
+  color: #ff6a00;
+}
+main .content__meta > div span {
+  color: #666;
+}
+main .content__meta > div:hover div span {
+  color: #ff6a00;
+}
+
+/*# sourceMappingURL=blog.css.map */
