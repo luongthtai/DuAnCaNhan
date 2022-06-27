@@ -8,6 +8,10 @@
     font-family: $font-family2;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -48,6 +52,40 @@ header {
 
             &--list {
                 display: none;
+
+                ul {
+                    display: flex;
+                    list-style-type: none;
+                }
+
+                .pages {
+                    &:hover {
+                        #dropdown {
+                            display: block;
+                        }
+                    }
+                }
+
+                #dropdown {
+                    flex-direction: column;
+                    display: none;
+                    position: absolute;
+                    top: 80%;
+                    background-color: $bg-color;
+                    padding: 0.5rem;
+                    border-radius: 5px;
+
+                    a {
+                        display: inline-block;
+                        color: $black-color;
+                        padding: .5rem 0;
+
+                        &:hover {
+                            color: $colors;
+                            transition: .5s;
+                        }
+                    }
+                }
 
                 @media only screen and(min-width: 1195px) {
                     display: flex;
@@ -230,7 +268,6 @@ main {
                 button {
                     &:nth-child(1) {
                         @extend %button;
-
                         @extend %hover-button;
                     }
 
@@ -243,7 +280,6 @@ main {
                             transition: .5s;
                         }
                     }
-
                 }
             }
 
@@ -591,16 +627,19 @@ footer {
 
 .up-web {
     font-size: 1rem;
-    color: $bg-color;
-    padding: .6rem .8rem;
     background-color: $colors;
-    display: inline-block;
     border-radius: 5px;
     position: fixed;
     right: 30px;
     bottom: 30px;
     z-index: 10;
     cursor: pointer;
+
+    a {
+        display: inline-block;
+        padding: .6rem .8rem;
+        color: $bg-color;
+    }
 }
 
 @media only screen and (min-width: 768px) {

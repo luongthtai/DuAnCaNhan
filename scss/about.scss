@@ -1,0 +1,79 @@
+@import "./style.scss";
+@import "./blog.scss";
+@import "./landing.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    cursor: pointer;
+}
+
+header {
+    .menu {
+        position: inherit;
+    }
+
+    .pre-home {
+        span {
+            color: $bg-color;
+        }
+    }
+}
+
+main {
+    flex-direction: column;
+    gap: 4rem;
+    padding: 0;
+    margin: 4rem 0;
+
+    .about-us {
+        @include dp-grid(1fr 1fr, auto);
+        gap: 25px;
+        padding: 0 5%;
+
+        &__top {
+            .read-more {
+                button {
+                    @extend %button2;
+                    
+                    &:hover {
+                        background-color: $colors;
+                        color: $bg-color;
+                        transition: .5s;
+                    }
+                }
+            }
+
+            p {
+                line-height: 1.8rem;
+            }
+        }
+    }
+
+    .offer {
+        background-color: $p-color2;
+        @include dp-grid(1fr 1fr, auto);
+
+        img {
+            height: 100%;
+        }
+
+        &__content {
+            padding: 4rem 10%;
+
+            &--bottom {
+                @include dp-grid(1fr 1fr, 1fr 1fr);
+                gap: 1rem;
+
+                h3 {
+                    &:hover {
+                        color: $colors;
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+    }
+}

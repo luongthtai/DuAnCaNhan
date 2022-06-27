@@ -1,7 +1,4 @@
-// @import "../scss/extend";
-@import "./mixins";
-@import "./variables";
-
+@import "./style.scss";
 
 %border-div {
     border: 1px solid $border;
@@ -36,6 +33,45 @@ body {
 
     button, a {
         cursor: pointer;
+    }
+}
+
+header {
+    padding-bottom: 1rem;
+    background-image: url(../blog/img-blog/bg-2.jpg);
+    @extend %bg-img;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::before {
+        @extend %bg-opacity;
+    }
+
+    .menu {
+        position: relative;
+
+        .hight-light {
+            color: $bg-color;
+        }
+
+        .pages {
+            color: $colors;
+        }
+    }
+
+    .pre-home {
+        text-align: center;
+        position: relative;
+        padding: .5rem 1.2rem;
+        background-color: $p-color; opacity: .7;
+        border-radius: 5px;
+        display: inline-block;
+        
+        a {
+            color: $colors;
+            text-decoration: none;
+        }
     }
 }
 

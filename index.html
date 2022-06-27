@@ -20,27 +20,47 @@
 
 <body>
     <div class="up-web">
-        <i class="fa-solid fa-arrow-turn-up"></i>
+        <a href="#home">
+            <i class="fa-solid fa-arrow-turn-up"></i>
+        </a>
     </div>
 
-    <header>
+    <header id="home">
         <div class="menu">
             <div class="menu__logo">
                 <a href="">Construe</a>
             </div>
-            
+
             <div class="menu__content">
-                <div class="menu__content--list">
-                    <a class="hight-light" href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Services</a>
-                    <a href="">Pages <i class="fa-solid fa-angle-down"></i></a>
-                    <a href="">Contact</a>
+                <nav class="menu__content--list">
+                    <ul>
+                        <li>
+                            <a class="hight-light" href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">Services</a>
+                        </li>
+                        <li class="pages">
+                            <a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+                            <ul id="dropdown">
+                                <li><a href="./blog/blog_posts.html">Blog Posts</a></li>
+                                <li><a href="./error/error_page.html">Error page</a></li>
+                                <li><a href="./landing/landing_page.html">Landing page</a></li>
+                                <li><a href="#">Element page</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
                     <form action="">
                         <input type="text" placeholder="Search.." required>
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
-                </div>
+                </nav>
                 <button><i class="fa-regular fa-moon"></i></button>
                 <div class="menu__content--item"><i class="fa-solid fa-bars"></i></div>
             </div>
@@ -106,7 +126,7 @@
         <section class="our-video">
             <div class="our-video__top">
                 <div class="our-video__top--content">
-                    <p class="title">Our Video</p>
+                    <p class="title">OUR VIDEO</p>
                     <h2>Lorem Ipsum Viverra Amet.</h2>
                     <p class="p-color">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula.
                         Semper at
@@ -162,7 +182,7 @@
 
         <section class="quality">
             <div class="quality__top">
-                <p class="title">Quality</p>
+                <p class="title">QUALITY</p>
                 <h2>Building The Future. Restoring The Past.</h2>
                 <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
                     tempufddfel. Lorem ipsum dolor sit, amet consectetur elit. Earum mollitia cum ex ipsam autem!earum
@@ -239,6 +259,8 @@
             <p>2022 Construe. All Rights Reserved | WordPress Theme by <a href="">W3Layout.</a></p>
         </div>
     </footer>
+
+    <script src="./js/script.js"></script>
 
 </body>
 
