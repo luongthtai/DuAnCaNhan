@@ -74,6 +74,7 @@ header {
                     background-color: $bg-color;
                     padding: 0.5rem;
                     border-radius: 5px;
+                    z-index: 20;
 
                     a {
                         display: inline-block;

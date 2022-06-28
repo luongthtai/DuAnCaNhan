@@ -1,0 +1,72 @@
+@import "./style.scss";
+@import "./about.scss";
+
+%pd-main {
+    padding: 3rem 4%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    .about {
+        margin: 2rem 0;
+
+        &__top {
+            padding: 0 4%;
+        }
+        &__bottom {
+            padding: 4rem 4%;
+            background-color: $p-color2;
+        }
+    }
+
+    .services {
+        text-align: center;
+        @extend %dp-flex;
+        flex-direction: column;
+        gap: 2rem;
+        @extend %pd-main;
+
+        img {
+            border-radius: 5px 5px 0 0;
+        }
+
+        &__bottom {
+            @include dp-grid(1fr 1fr 1fr, auto);
+
+            @media only screen and(max-width: 768px) {
+                @include dp-grid(1fr, 1fr 1fr 1fr)
+            }
+
+            &--items {
+                border-radius: 5px;
+                box-shadow: 0px 2px 12px $border;
+
+                .services-content {
+                    position: relative;
+                    padding: 0 5%;
+
+                    .icon {
+                        padding: 5px;
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translate(-50%,-100%);
+                        border-radius: 50%;
+                        background-color: $bg-color;
+                    }
+
+                    i {
+                        color: $bg-color;
+                        background-color: $colors;
+                        padding: 1rem;
+                        font-size: 1.5rem;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

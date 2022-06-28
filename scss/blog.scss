@@ -51,10 +51,6 @@ header {
     .menu {
         position: relative;
 
-        .hight-light {
-            color: $bg-color;
-        }
-
         .pages {
             color: $colors;
         }
@@ -64,9 +60,10 @@ header {
         text-align: center;
         position: relative;
         padding: .5rem 1.2rem;
-        background-color: $p-color; opacity: .7;
+        background-color: $p-color; opacity: .7;;
         border-radius: 5px;
         display: inline-block;
+        z-index: 10;
         
         a {
             color: $colors;

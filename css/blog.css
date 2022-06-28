@@ -90,6 +90,10 @@ main .join__top form button:hover, main .quality__top button:hover, main .our-vi
   font-family: "Sarabun", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -127,13 +131,27 @@ header .menu__content--list ul {
   display: flex;
   list-style-type: none;
 }
-header .menu__content--list #dropdown {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
+header .menu__content--list .pages:hover #dropdown {
+  display: block;
 }
-header .menu__content--list #dropdown li {
+header .menu__content--list #dropdown {
+  flex-direction: column;
   display: none;
+  position: absolute;
+  top: 80%;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  z-index: 20;
+}
+header .menu__content--list #dropdown a {
+  display: inline-block;
+  color: #000;
+  padding: 0.5rem 0;
+}
+header .menu__content--list #dropdown a:hover {
+  color: #ff6a00;
+  transition: 0.5s;
 }
 @media only screen and (min-width: 1195px) {
   header .menu__content--list {
@@ -573,16 +591,18 @@ footer .footer__bottom a:hover {
 
 .up-web {
   font-size: 1rem;
-  color: #fff;
-  padding: 0.6rem 0.8rem;
   background-color: #ff6a00;
-  display: inline-block;
   border-radius: 5px;
   position: fixed;
   right: 30px;
   bottom: 30px;
   z-index: 10;
   cursor: pointer;
+}
+.up-web a {
+  display: inline-block;
+  padding: 0.6rem 0.8rem;
+  color: #fff;
 }
 
 @media only screen and (min-width: 768px) {
@@ -652,12 +672,12 @@ body button, body a {
 header {
   padding-bottom: 1rem;
   background-image: url(../blog/img-blog/bg-2.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 header .menu {
   position: relative;
-}
-header .menu .hight-light {
-  color: #fff;
 }
 header .menu .pages {
   color: #ff6a00;
@@ -665,15 +685,16 @@ header .menu .pages {
 header .pre-home {
   text-align: center;
   position: relative;
-}
-header .pre-home a {
-  display: inline-block;
   padding: 0.5rem 1.2rem;
-  color: #ff6a00;
-  text-decoration: none;
   background-color: #666;
   opacity: 0.7;
   border-radius: 5px;
+  display: inline-block;
+  z-index: 10;
+}
+header .pre-home a {
+  color: #ff6a00;
+  text-decoration: none;
 }
 
 main {

@@ -142,6 +142,7 @@ header .menu__content--list #dropdown {
   background-color: #fff;
   padding: 0.5rem;
   border-radius: 5px;
+  z-index: 20;
 }
 header .menu__content--list #dropdown a {
   display: inline-block;
