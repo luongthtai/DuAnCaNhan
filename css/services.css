@@ -2,7 +2,7 @@
   --theme:#fff;
 }
 
-main .services, main .fill-out__call, main .join-us__content, main .gallery, main .our-video__top--play, main .our-video__top, header .menu__content--item, header .menu__content, header .menu {
+main .services, main .join-us__content, main .gallery, main .our-video__top--play, main .our-video__top, header .menu__content--item, header .menu__content, header .menu {
   display: flex;
   align-items: center;
 }
@@ -13,10 +13,6 @@ main .gallery, main .about {
 
 main .quality, header .header-content {
   padding: 0 2%;
-}
-
-main .about__bottom {
-  padding: 0 4%;
 }
 
 footer, main .join, main .clients__content {
@@ -140,7 +136,7 @@ header .menu__content--list #dropdown {
   position: absolute;
   top: 80%;
   background-color: #fff;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
   z-index: 20;
 }
@@ -260,6 +256,8 @@ main img {
   border-radius: 5px;
 }
 main .title {
+  font-size: 0.8rem;
+  font-weight: 600;
   color: #ff6a00;
   margin: 0;
   display: inline-block;
@@ -280,7 +278,7 @@ main .about {
   display: grid;
   grid-template: auto/1fr;
   gap: 20px;
-  gap: 3rem;
+  gap: 7rem;
 }
 main .about__top {
   display: grid;
@@ -639,7 +637,7 @@ footer .footer__bottom a:hover {
   --theme:#fff;
 }
 
-main .services, main .fill-out__call, main .join-us__content, header .menu, header .menu__content, header .menu__content--item, main .our-video__top, main .our-video__top--play, main .gallery {
+main .services, main .join-us__content, header .menu, header .menu__content, header .menu__content--item, main .our-video__top, main .our-video__top--play, main .gallery {
   display: flex;
   align-items: center;
 }
@@ -650,10 +648,6 @@ main .about, main .gallery {
 
 header .header-content, main .quality {
   padding: 0 2%;
-}
-
-main .about__bottom {
-  padding: 0 4%;
 }
 
 main .clients__content, main .join, footer {
@@ -777,7 +771,7 @@ header .menu__content--list #dropdown {
   position: absolute;
   top: 80%;
   background-color: #fff;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
   z-index: 20;
 }
@@ -897,6 +891,8 @@ main img {
   border-radius: 5px;
 }
 main .title {
+  font-size: 0.8rem;
+  font-weight: 600;
   color: #ff6a00;
   margin: 0;
   display: inline-block;
@@ -917,7 +913,7 @@ main .about {
   display: grid;
   grid-template: auto/1fr;
   gap: 20px;
-  gap: 3rem;
+  gap: 7rem;
 }
 main .about__top {
   display: grid;
@@ -1276,7 +1272,7 @@ footer .footer__bottom a:hover {
   --theme:#fff;
 }
 
-main .services, main .fill-out__call, main .join-us__content, header .menu, header .menu__content, header .menu__content--item, main .our-video__top, main .our-video__top--play, main .gallery {
+main .services, main .join-us__content, header .menu, header .menu__content, header .menu__content--item, main .our-video__top, main .our-video__top--play, main .gallery {
   display: flex;
   align-items: center;
 }
@@ -1287,10 +1283,6 @@ main .about, main .gallery {
 
 header .header-content, main .quality {
   padding: 0 2%;
-}
-
-main .about__bottom {
-  padding: 0 4%;
 }
 
 main .clients__content, main .join, footer {
@@ -1414,7 +1406,7 @@ header .menu__content--list #dropdown {
   position: absolute;
   top: 80%;
   background-color: #fff;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
   z-index: 20;
 }
@@ -1534,6 +1526,8 @@ main img {
   border-radius: 5px;
 }
 main .title {
+  font-size: 0.8rem;
+  font-weight: 600;
   color: #ff6a00;
   margin: 0;
   display: inline-block;
@@ -1554,7 +1548,7 @@ main .about {
   display: grid;
   grid-template: auto/1fr;
   gap: 20px;
-  gap: 3rem;
+  gap: 7rem;
 }
 main .about__top {
   display: grid;
@@ -2081,7 +2075,7 @@ main .content__meta > div:hover div span {
   --theme:#fff;
 }
 
-main .services, main .fill-out__call, main .join-us__content, header .menu, header .menu__content, header .menu__content--item, main .our-video__top, main .our-video__top--play, main .gallery {
+main .services, main .join-us__content, header .menu, header .menu__content, header .menu__content--item, main .our-video__top, main .our-video__top--play, main .gallery {
   display: flex;
   align-items: center;
 }
@@ -2092,10 +2086,6 @@ main .about, main .gallery {
 
 header .header-content, main .quality {
   padding: 0 2%;
-}
-
-main .about__bottom {
-  padding: 0 4%;
 }
 
 main .clients__content, main .join, footer {
@@ -2219,7 +2209,7 @@ header .menu__content--list #dropdown {
   position: absolute;
   top: 80%;
   background-color: #fff;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
   z-index: 20;
 }
@@ -2339,6 +2329,8 @@ main img {
   border-radius: 5px;
 }
 main .title {
+  font-size: 0.8rem;
+  font-weight: 600;
   color: #ff6a00;
   margin: 0;
   display: inline-block;
@@ -2359,7 +2351,7 @@ main .about {
   display: grid;
   grid-template: auto/1fr;
   gap: 20px;
-  gap: 3rem;
+  gap: 7rem;
 }
 main .about__top {
   display: grid;
@@ -2764,6 +2756,11 @@ main .join {
   padding: 0;
   align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  main .join {
+    margin: 3rem 0;
+  }
+}
 main .join__top {
   padding: 0 10%;
 }
@@ -2775,6 +2772,12 @@ main .join-us__content {
   padding: 3rem 5%;
   position: relative;
 }
+@media only screen and (max-width: 1195px) {
+  main .join-us__content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
 main .join-us__content--top {
   min-width: 50%;
 }
@@ -2785,14 +2788,15 @@ main .join-us__content--top #content {
   color: #fff;
 }
 main .join-us__content .read-more {
-  min-width: 50%;
   display: flex;
   justify-content: end;
   gap: 20px;
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   main .join-us__content .read-more {
     flex-direction: row;
+    min-width: 50%;
   }
 }
 @media only screen and (min-width: 1195px) {
@@ -2800,7 +2804,11 @@ main .join-us__content .read-more {
     width: auto;
   }
 }
+main .join-us__content button:nth-child(1) {
+  width: 50%;
+}
 main .join-us__content button:nth-child(2) {
+  width: 50%;
   background-color: initial;
   border-color: #fff;
   color: #fff;
@@ -2817,6 +2825,16 @@ main .fill-out {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+}
+@media only screen and (max-width: 1195px) {
+  main .fill-out {
+    padding: 3rem 5%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main .fill-out {
+    padding: 3rem 10%;
+  }
 }
 main .fill-out form {
   display: flex;
@@ -2849,8 +2867,15 @@ main .fill-out form textarea {
   border-radius: 5px;
 }
 main .fill-out__call {
+  display: flex;
   justify-content: center;
   gap: 20px;
+}
+@media only screen and (max-width: 768px) {
+  main .fill-out__call {
+    flex-direction: column;
+    text-align: initial;
+  }
 }
 main .fill-out__call--content {
   display: flex;
@@ -2919,6 +2944,15 @@ main .about-us {
   gap: 20px;
   gap: 25px;
   padding: 0 5%;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  main .about-us {
+    display: grid;
+    grid-template: auto/1fr;
+    gap: 20px;
+    gap: 2rem;
+  }
 }
 main .about-us__top .read-more button:hover {
   background-color: #ff6a00;
@@ -2934,8 +2968,20 @@ main .offer {
   grid-template: auto/1fr 1fr;
   gap: 20px;
 }
+@media only screen and (max-width: 768px) {
+  main .offer {
+    display: grid;
+    grid-template: auto/1fr;
+    gap: 20px;
+  }
+}
 main .offer img {
   height: 100%;
+}
+@media only screen and (max-width: 768px) {
+  main .offer img {
+    display: none;
+  }
 }
 main .offer__content {
   padding: 4rem 10%;

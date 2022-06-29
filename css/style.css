@@ -15,10 +15,6 @@ main .quality, header .header-content {
   padding: 0 2%;
 }
 
-main .about__bottom {
-  padding: 0 4%;
-}
-
 footer, main .join, main .clients__content {
   padding: 3rem 4%;
 }
@@ -140,7 +136,7 @@ header .menu__content--list #dropdown {
   position: absolute;
   top: 80%;
   background-color: #fff;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
   z-index: 20;
 }
@@ -260,6 +256,8 @@ main img {
   border-radius: 5px;
 }
 main .title {
+  font-size: 0.8rem;
+  font-weight: 600;
   color: #ff6a00;
   margin: 0;
   display: inline-block;
@@ -280,7 +278,7 @@ main .about {
   display: grid;
   grid-template: auto/1fr;
   gap: 20px;
-  gap: 3rem;
+  gap: 7rem;
 }
 main .about__top {
   display: grid;
@@ -472,8 +470,15 @@ main .quality__top {
 }
 main .quality__bottom {
   display: grid;
-  grid-template: auto/1fr 1fr;
+  grid-template: auto/1fr;
   gap: 20px;
+}
+@media only screen and (min-width: 768px) {
+  main .quality__bottom {
+    display: grid;
+    grid-template: auto/1fr 1fr;
+    gap: 20px;
+  }
 }
 main .clients {
   background-image: url(../img/bg-2.jpg);

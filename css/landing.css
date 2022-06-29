@@ -2,7 +2,7 @@
   --theme:#fff;
 }
 
-main .fill-out__call, main .join-us__content, main .gallery, main .our-video__top--play, main .our-video__top, header .menu__content--item, header .menu__content, header .menu {
+main .join-us__content, main .gallery, main .our-video__top--play, main .our-video__top, header .menu__content--item, header .menu__content, header .menu {
   display: flex;
   align-items: center;
 }
@@ -13,10 +13,6 @@ main .gallery, main .about {
 
 main .quality, header .header-content {
   padding: 0 2%;
-}
-
-main .about__bottom {
-  padding: 0 4%;
 }
 
 footer, main .join, main .clients__content {
@@ -140,8 +136,9 @@ header .menu__content--list #dropdown {
   position: absolute;
   top: 80%;
   background-color: #fff;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
+  z-index: 20;
 }
 header .menu__content--list #dropdown a {
   display: inline-block;
@@ -259,6 +256,8 @@ main img {
   border-radius: 5px;
 }
 main .title {
+  font-size: 0.8rem;
+  font-weight: 600;
   color: #ff6a00;
   margin: 0;
   display: inline-block;
@@ -279,7 +278,7 @@ main .about {
   display: grid;
   grid-template: auto/1fr;
   gap: 20px;
-  gap: 3rem;
+  gap: 7rem;
 }
 main .about__top {
   display: grid;
@@ -471,8 +470,15 @@ main .quality__top {
 }
 main .quality__bottom {
   display: grid;
-  grid-template: auto/1fr 1fr;
+  grid-template: auto/1fr;
   gap: 20px;
+}
+@media only screen and (min-width: 768px) {
+  main .quality__bottom {
+    display: grid;
+    grid-template: auto/1fr 1fr;
+    gap: 20px;
+  }
 }
 main .clients {
   background-image: url(../img/bg-2.jpg);
@@ -649,6 +655,13 @@ main .our-team__bottom {
   grid-template: auto/1fr 1fr 1fr;
   gap: 20px;
 }
+@media only screen and (max-width: 768px) {
+  main .our-team__bottom {
+    display: grid;
+    grid-template: auto/1fr;
+    gap: 20px;
+  }
+}
 main .our-team__bottom--items {
   text-align: center;
 }
@@ -681,7 +694,6 @@ main .clients {
   margin-bottom: 0;
 }
 main .join {
-  padding: 0;
   align-items: center;
 }
 main .join__top {
@@ -695,6 +707,12 @@ main .join-us__content {
   padding: 3rem 5%;
   position: relative;
 }
+@media only screen and (max-width: 1195px) {
+  main .join-us__content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
 main .join-us__content--top {
   min-width: 50%;
 }
@@ -705,25 +723,35 @@ main .join-us__content--top #content {
   color: #fff;
 }
 main .join-us__content .read-more {
-  min-width: 50%;
   display: flex;
   justify-content: end;
   gap: 20px;
+  width: 100%;
 }
 @media only screen and (min-width: 768px) {
   main .join-us__content .read-more {
     flex-direction: row;
+    max-width: 50%;
   }
 }
+main .join-us__content button:nth-child(1) {
+  width: 50%;
+}
 @media only screen and (min-width: 1195px) {
-  main .join-us__content .read-more button {
-    width: auto;
+  main .join-us__content button:nth-child(1) {
+    max-width: 30%;
   }
 }
 main .join-us__content button:nth-child(2) {
+  width: 50%;
   background-color: initial;
   border-color: #fff;
   color: #fff;
+}
+@media only screen and (min-width: 1195px) {
+  main .join-us__content button:nth-child(2) {
+    max-width: 30%;
+  }
 }
 main .join-us__content button:nth-child(2):hover {
   background-color: #ff6a00;
@@ -737,6 +765,16 @@ main .fill-out {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+}
+@media only screen and (max-width: 1195px) {
+  main .fill-out {
+    padding: 3rem 5%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main .fill-out {
+    padding: 3rem 10%;
+  }
 }
 main .fill-out form {
   display: flex;
@@ -769,8 +807,15 @@ main .fill-out form textarea {
   border-radius: 5px;
 }
 main .fill-out__call {
+  display: flex;
   justify-content: center;
   gap: 20px;
+}
+@media only screen and (max-width: 768px) {
+  main .fill-out__call {
+    flex-direction: column;
+    text-align: initial;
+  }
 }
 main .fill-out__call--content {
   display: flex;

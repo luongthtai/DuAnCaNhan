@@ -28,12 +28,18 @@ main {
         @include dp-grid(1fr 1fr, auto);
         gap: 25px;
         padding: 0 5%;
+        align-items: center;
+
+        @media only screen and(max-width: 768px) {
+            @include dp-grid(1fr, auto);
+            gap: 2rem;
+        }
 
         &__top {
             .read-more {
                 button {
                     @extend %button2;
-                    
+
                     &:hover {
                         background-color: $colors;
                         color: $bg-color;
@@ -52,8 +58,16 @@ main {
         background-color: $p-color2;
         @include dp-grid(1fr 1fr, auto);
 
+        @media only screen and(max-width: 1195px) {
+            @include dp-grid(1fr, auto);
+        }
+
         img {
             height: 100%;
+
+            @media only screen and(max-width: 1195px) {
+                display: none;
+            }
         }
 
         &__content {

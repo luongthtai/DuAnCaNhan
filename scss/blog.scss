@@ -78,9 +78,25 @@ main {
     padding: 20px;
     gap: 20px;
 
+    @media only screen and(max-width: 992px) {
+        flex-direction: column;
+    }
+
+    @media only screen and(max-width: 992px) {
+        padding: 3rem 10%;
+    }
+
+    @media only screen and(max-width: 554px) {
+        padding: 3rem 2%;
+    }
+
     .users {
         @extend %dp-grid;
         width: 65%;
+
+        @media only screen and(max-width: 992px) {
+            width: 100%;
+        }
 
         &__content {
             @extend %border-div;
@@ -129,6 +145,10 @@ main {
         display: flex;
         flex-direction: column;
         gap: 20px;
+
+        @media only screen and(max-width: 992px) {
+            width: 100%;
+        }
 
         &>div {
             @extend %border-div;
