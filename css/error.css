@@ -15,10 +15,6 @@ main .quality, header .header-content {
   padding: 0 2%;
 }
 
-main .about__bottom {
-  padding: 0 4%;
-}
-
 footer, main .join, main .clients__content {
   padding: 3rem 4%;
 }
@@ -90,6 +86,10 @@ main .join__top form button:hover, main .quality__top button:hover, main .our-vi
   font-family: "Sarabun", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -127,13 +127,26 @@ header .menu__content--list ul {
   display: flex;
   list-style-type: none;
 }
-header .menu__content--list #dropdown {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-}
-header .menu__content--list #dropdown li {
+header .menu__content--list .fade {
   display: none;
+}
+header .menu__content--list #dropdown {
+  flex-direction: column;
+  position: absolute;
+  top: 80%;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  z-index: 20;
+}
+header .menu__content--list #dropdown a {
+  display: inline-block;
+  color: #000;
+  padding: 0.5rem 0;
+}
+header .menu__content--list #dropdown a:hover {
+  color: #ff6a00;
+  transition: 0.5s;
 }
 @media only screen and (min-width: 1195px) {
   header .menu__content--list {
@@ -242,6 +255,8 @@ main img {
   border-radius: 5px;
 }
 main .title {
+  font-size: 0.8rem;
+  font-weight: 600;
   color: #ff6a00;
   margin: 0;
   display: inline-block;
@@ -262,7 +277,7 @@ main .about {
   display: grid;
   grid-template: auto/1fr;
   gap: 20px;
-  gap: 3rem;
+  gap: 7rem;
 }
 main .about__top {
   display: grid;
@@ -426,6 +441,36 @@ main .gallery__content {
   grid-template: auto/1fr 1fr;
   gap: 20px;
 }
+main .gallery__content div {
+  position: relative;
+}
+main .gallery__content div:hover:before {
+  content: " ";
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  border-radius: 5px;
+  position: absolute;
+  background-color: #111;
+  opacity: 0.6;
+  z-index: 10;
+  animation: zoomOut 0.3s linear;
+}
+@keyframes zoomOut {
+  from {
+    transform: scale(0, 0);
+  }
+  to {
+    transform: scale(100%, 100%);
+  }
+}
+main .gallery__content div img {
+  cursor: pointer;
+  display: block;
+  position: relative;
+}
 @media only screen and (min-width: 768px) {
   main .gallery__content {
     grid-template: 1fr 1fr 1fr/1fr 1fr 1fr;
@@ -454,8 +499,15 @@ main .quality__top {
 }
 main .quality__bottom {
   display: grid;
-  grid-template: auto/1fr 1fr;
+  grid-template: auto/1fr;
   gap: 20px;
+}
+@media only screen and (min-width: 768px) {
+  main .quality__bottom {
+    display: grid;
+    grid-template: auto/1fr 1fr;
+    gap: 20px;
+  }
 }
 main .clients {
   background-image: url(../img/bg-2.jpg);
@@ -573,16 +625,18 @@ footer .footer__bottom a:hover {
 
 .up-web {
   font-size: 1rem;
-  color: #fff;
-  padding: 0.6rem 0.8rem;
   background-color: #ff6a00;
-  display: inline-block;
   border-radius: 5px;
   position: fixed;
   right: 30px;
   bottom: 30px;
   z-index: 10;
   cursor: pointer;
+}
+.up-web a {
+  display: inline-block;
+  padding: 0.6rem 0.8rem;
+  color: #fff;
 }
 
 @media only screen and (min-width: 768px) {
@@ -661,14 +715,14 @@ body .container form button {
 body .container .back-home {
   padding: 2rem 0;
 }
-body .container .back-home a {
+body .container .back-home #backHome {
   color: #000;
   font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
   text-decoration: none;
 }
-body .container .back-home a:hover {
+body .container .back-home #backHome:hover {
   color: #ff6a00;
   transition: 0.5s;
 }

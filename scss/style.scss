@@ -18,6 +18,7 @@ body {
 
     img {
         width: 100%;
+        display: block;
     }
 
     button {
@@ -58,17 +59,12 @@ header {
                     list-style-type: none;
                 }
 
-                .pages {
-                    &:hover {
-                        #dropdown {
-                            display: block;
-                        }
-                    }
+                .fade {
+                    display: none;
                 }
 
                 #dropdown {
                     flex-direction: column;
-                    display: none;
                     position: absolute;
                     top: 80%;
                     background-color: $bg-color;
@@ -118,7 +114,7 @@ header {
                         padding: .5rem 1rem;
                     }
 
-                    button {
+                    div {
                         flex-shrink: 1;
                         padding: .5rem 1.5rem;
                         border: none;
@@ -305,6 +301,9 @@ main {
             }
 
             &--items {
+                display: flex;
+                flex-direction: column;
+
                 i {
                     font-size: 2.5rem;
                     color: $colors;
@@ -448,6 +447,41 @@ main {
 
         &__content {
             @include dp-grid(1fr 1fr, auto);
+            
+            div {
+                position: relative;
+                
+                &:hover:before {
+                    content: ' ';
+                    cursor: pointer;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    right: 0;
+                    border-radius: 5px;
+                    position: absolute;
+                    background-color: #111;
+                    opacity: .6;
+                    z-index: 10;
+                    animation: zoomOut .3s linear;
+
+                    @keyframes zoomOut {
+                        from {
+                            transform: scale(0,0);
+                        }
+                        to {
+                            transform: scale(100%, 100%);
+                        }
+                    }
+                }
+
+                img {
+                    cursor: pointer;
+                    display: block;
+                    position: relative;
+                }
+            }
+
 
             @media only screen and (min-width: 768px) {
                 grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
